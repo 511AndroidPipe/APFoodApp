@@ -29,7 +29,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pipeanayap.foodapp.components.CategoriaCard
+import com.pipeanayap.foodapp.components.RestauranteCard
 import com.pipeanayap.foodapp.models.categoryList
+import com.pipeanayap.foodapp.models.restaurantList
 import com.pipeanayap.foodapp.ui.theme.FoodAppTheme
 
 @Composable
@@ -81,6 +83,20 @@ fun HomeScreen( innerPadding:PaddingValues) {
         ) {
             items(categoryList) { categoria ->
                 CategoriaCard(categoria = categoria)
+            }
+        }
+        Text(
+            modifier = Modifier
+                .padding(top = 25.dp),
+            text = "Busca los mejores restaurantes",
+            fontSize = 24.sp
+        )
+        LazyRow(
+            modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            items(restaurantList) { restaurante ->
+                RestauranteCard(restaurante = restaurante)
             }
         }
 
