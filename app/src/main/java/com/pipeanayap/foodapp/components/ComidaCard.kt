@@ -45,7 +45,7 @@ fun ComidaCard(comida: Comida){
                 model = comida.imagen,
                 contentDescription = null,
                 modifier = Modifier.fillMaxSize(),
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Fit
             )
 
             Box(

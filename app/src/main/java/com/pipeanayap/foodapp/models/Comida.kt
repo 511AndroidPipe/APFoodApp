@@ -18,7 +18,7 @@ val foodList = listOf(
         nombre = "Chicken Fries",
         calificacion = 4.3f,
         precio = 59.8f,
-        imagen = "https://www.whopper.ie/wp-content/uploads/2021/04/Chicken_Fries_-1200x800_DE-1.png"
+        imagen = "https://burgerking.com.mt/wp-content/uploads/2020/03/Chicken-fries-500-x-500.png"
     ),
     Comida(
         nombre = "Big Mac",

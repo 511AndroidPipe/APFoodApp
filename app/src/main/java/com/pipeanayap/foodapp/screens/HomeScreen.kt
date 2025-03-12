@@ -38,6 +38,7 @@ import com.pipeanayap.foodapp.components.RestauranteCard
 import com.pipeanayap.foodapp.models.categoryList
 import com.pipeanayap.foodapp.models.foodList
 import com.pipeanayap.foodapp.models.restaurantList
+import com.pipeanayap.foodapp.utils.Logout
 import com.pipeanayap.foodapp.ui.theme.FoodAppTheme
 
 @Composable
@@ -70,7 +71,7 @@ fun HomeScreen( innerPadding:PaddingValues) {
 
             Image(
                 modifier = Modifier.size(40.dp), // Aumenta el tamaño del icono
-                imageVector = Icons.Default.Search, // Usa el icono correcto (puedes cambiarlo)
+                imageVector = Logout, // Usa el icono correcto (puedes cambiarlo)
                 contentDescription = null,
                 colorFilter = ColorFilter.tint(Color.Red)
             )
